@@ -244,7 +244,7 @@ available on `PATH` and give them some ideas of what to do with it.  `absurdctl`
 can output some agent-specific help that you can put into your `AGENTS.md` /
 `CLAUDE.md` files:
 
-```
+```bash
 absurdctl agent-help >> AGENTS.md
 ```
 
@@ -258,6 +258,6 @@ extent to which it can be copyrighted, the Apache 2.0 license should be assumed.
 
 ## License and Links
 
-- [Examples](https://github.com/earendil-works/absurd/tree/main/sdks/typescript/examples)
-- [Issue Tracker](https://github.com/earendil-works/absurd/issues)
-- License: [Apache-2.0](https://github.com/earendil-works/absurd/blob/main/LICENSE)
+* [Examples](https://github.com/earendil-works/absurd/tree/main/sdks/typescript/examples)
+* [Issue Tracker](https://github.com/earendil-works/absurd/issues)
+* License: [Apache-2.0](https://github.com/earendil-works/absurd/blob/main/LICENSE)
