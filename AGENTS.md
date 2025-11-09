@@ -20,6 +20,7 @@ lives in Postgres tables prefixed by queue name (`t_`, `r_`, `c_`, `e_`, `w_`).
 ## Building and Testing
 
 ### TypeScript SDK
+
 ```bash
 cd sdks/typescript
 npm install
@@ -27,6 +28,7 @@ npm run build  # Compiles to dist/ (both ESM and CommonJS)
 ```
 
 ### Habitat (Web UI)
+
 ```bash
 cd habitat
 make build      # Build UI + Go binary -> bin/habitat
@@ -35,6 +37,7 @@ make dev        # Run dev server with hot reload
 ```
 
 ### Python Tests
+
 ```bash
 cd tests
 uv run pytest              # Run all tests
@@ -42,6 +45,7 @@ uv run pytest test_foo.py  # Run single test file
 ```
 
 ### Formatting
+
 ```bash
 make format     # Format TypeScript SDK, habitat UI, and Python tests
 ```

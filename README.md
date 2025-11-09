@@ -125,7 +125,7 @@ const app = new Absurd();
 // successfully, the return value is retained and it won't execute again.
 // If it fails, the entire task is retried.  Code that runs outside of
 // steps will potentially be executed multiple times.
-app.registerTask({ name: 'order-fulfillment' }, async (params, ctx) => {
+app.registerTask({ name: 'order-fulfilment' }, async (params, ctx) => {
 
   // Each step is checkpointed, so if the process crashes, we resume
   // from the last completed step
@@ -167,7 +167,7 @@ Spawn a task:
 ```typescript
 // Spawn a task - it will be executed durably with automatic retries.  If
 // triggered from within a task, you can also await it.
-app.spawn('order-fulfillment', {
+app.spawn('order-fulfilment', {
   orderId: '42',
   amount: 9999,
   items: ['widget-1', 'gadget-2'],

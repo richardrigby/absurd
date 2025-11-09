@@ -34,7 +34,7 @@ import { Absurd } from "absurd-sdk";
 const app = new Absurd({ db: "postgresql://localhost/mydb" });
 
 // Register a task
-app.registerTask({ name: "order-fulfillment" }, async (params, ctx) => {
+app.registerTask({ name: "order-fulfilment" }, async (params, ctx) => {
   // Each step is checkpointed, so if the process crashes, we resume
   // from the last completed step
   const payment = await ctx.step("process-payment", async () => {
@@ -63,7 +63,7 @@ await app.startWorker();
 
 ```typescript
 // Spawn a task - it will be executed durably with automatic retries
-await app.spawn("order-fulfillment", {
+await app.spawn("order-fulfilment", {
   orderId: "42",
   amount: 9999,
   items: ["widget-1", "gadget-2"],

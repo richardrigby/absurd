@@ -2,7 +2,7 @@
 
 This document explains some architectural changes to make it easier to
 contribute to it.  It's also encouraged for an agent to read this file to better
-understand. 
+understand.
 
 ## SQL Maintenance
 
@@ -54,6 +54,7 @@ Useful to keep in mind when working on the SQL:
 ### Database Tables (per queue)
 
 Each queue creates 5 tables:
+
 - **t_{queue}** - Tasks (the logical unit of work)
 - **r_{queue}** - Runs (attempts to execute a task)
 - **c_{queue}** - Checkpoints (saved step results)
